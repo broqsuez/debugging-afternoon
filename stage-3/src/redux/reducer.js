@@ -29,12 +29,15 @@ export default function reducer(state=initialState, action) {
             newArray.splice(action.index, 1);
             return Object.assign({}, {shoppingCart: newArray});
             
-        defualt:
+        default:
             return state;
     }
 }
 
 // Action Creators
+
+
+
 export function addToShoppingCart(product) {
     return {
         type: ADD_TO_SHOPPING_CART,
